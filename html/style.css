@@ -1,14 +1,91 @@
-title {}
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial;
+    margin: 0;
+  }
+  
+  header {
+    padding: 60px;
+    text-align: center;
+    background: #113658;
+    color: #fff;
+  }
+  
+  nav  {
+    display: flex;
 
-h1 { }
+    background-color: #6b6968;
+    
+  
+  }
 
-h2 { }
+  
+  nav p {
+    
+    padding: 14px 20px;
+    text-decoration: none;
+  }
+  
+   main {
+    display: flex;
+  }
+  
+  aside {
+    flex: 30%;
+    background-color: #6fdd15;
+    padding: 20px;
+    flex-wrap: wrap;
+  }
+  
+  h2 {
+  text-decoration: underline;
+}
 
-h3 { }
-
-body {
-    background-color: aqua;
-
- }
-
- footer {}
+  section {
+    flex: 70%;
+    background-color: rgb(185, 34, 34);
+    padding: 20px;
+  }
+  
+  footer {
+    padding: 20px;
+    text-align: center;
+    background: #6c6c6d;
+    color: #fff;
+  }
+  
+  /* Image Placeholders */
+  .sample-img {
+    
+    width: 5px;
+    padding: 5px;
+    height: 5px;
+    border: 1px solid black;
+  }
+  
+  /* When using `max-width` as the breakpoint, you must go from widest to narrowest to avoid conflict */
+  
+  /* Tablets - header changes color */
+  @media screen and (max-width: 992px) {
+    header {
+      background: #772014;
+    }
+  }
+  
+  /* Large smartphones - navbar changes color */
+  @media screen and (max-width: 768px) {
+    nav {
+      background-color: #bb8588;
+    }
+  }
+  
+  /* Small smartphones - image placeholders change color */
+  @media screen and (max-width: 576px) {
+    .sample-img {
+      background-color: #8ac4ff;
+    }
+  }
+  
